@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nutrition Recommendation</title>
+
+    <link rel="stylesheet"
+        href="{{ url_for('static', filename='css/style.css') }}">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!--================ NAVBAR ================-->
+
+    <nav>
+
+        <div class="nav-container">
+
+            <a href="/" class="logo">
+
+                Nutri<span>AI</span>
+
+            </a>
+
+            <div class="nav-links">
+
+                <a href="/">Home</a>
+
+                <a href="/about">About</a>
+
+                <a href="/project">Project</a>
+
+                <a href="/contact">Contact</a>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!--================ FORM SECTION ================-->
+
+    <section class="project">
+
+        <div class="glass form-container">
+
+            <div class="form-title">
+
+                <h2>
+
+                    <i class="fa-solid fa-bowl-food"></i>
+
+                    Nutrition Recommendation
+
+                </h2>
+
+                <p>
+
+                    Enter your nutritional requirements and get
+                    personalized meal recommendations powered by
+                    Machine Learning.
+
+                </p>
+
+            </div>
+
+            <form action="/recommend" method="POST">
+
+                <div class="form-grid">
+
+                    <div class="input-group">
+
+                        <label>Calories (kcal)</label>
+
+                        <input
+                            type="number"
+                            step="0.1"
+                            name="calories"
+                            placeholder="Example : 500"
+                            required>
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <label>Protein (g)</label>
+
+                        <input
+                            type="number"
+                            step="0.1"
+                            name="protein"
+                            placeholder="Example : 40"
+                            required>
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <label>Carbohydrates (g)</label>
+
+                        <input
+                            type="number"
+                            step="0.1"
+                            name="carbs"
+                            placeholder="Example : 60"
+                            required>
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <label>Fat (g)</label>
+
+                        <input
+                            type="number"
+                            step="0.1"
+                            name="fat"
+                            placeholder="Example : 15"
+                            required>
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <label>Fiber (g)</label>
+
+                        <input
+                            type="number"
+                            step="0.1"
+                            name="fiber"
+                            placeholder="Example : 10"
+                            required>
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <label>Sugar (g)</label>
+
+                        <input
+                            type="number"
+                            step="0.1"
+                            name="sugar"
+                            placeholder="Example : 8"
+                            required>
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <label>Sodium (mg)</label>
+
+                        <input
+                            type="number"
+                            step="0.1"
+                            name="sodium"
+                            placeholder="Example : 700"
+                            required>
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <label>Cholesterol (mg)</label>
+
+                        <input
+                            type="number"
+                            step="0.1"
+                            name="cholesterol"
+                            placeholder="Example : 40"
+                            required>
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <label>Serving Size (g)</label>
+
+                        <input
+                            type="number"
+                            step="0.1"
+                            name="serving"
+                            placeholder="Example : 250"
+                            required>
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <label>Cuisine</label>
+
+                        <select name="cuisine">
+
+                            <option>Any</option>
+
+                            <option>Indian</option>
+
+                            <option>American</option>
+
+                            <option>Italian</option>
+
+                            <option>Chinese</option>
+
+                            <option>Thai</option>
+
+                            <option>Mexican</option>
+
+                            <option>Mediterranean</option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <label>Meal Type</label>
+
+                        <select name="meal_type">
+
+                            <option>Any</option>
+
+                            <option>Breakfast</option>
+
+                            <option>Lunch</option>
+
+                            <option>Dinner</option>
+
+                            <option>Snack</option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <label>Diet Type</label>
+
+                        <select name="diet_type">
+
+                            <option>Any</option>
+
+                            <option>Balanced</option>
+
+                            <option>Keto</option>
+
+                            <option>Vegan</option>
+
+                            <option>Vegetarian</option>
+
+                            <option>Paleo</option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+                <div class="form-btn">
+
+                    <button type="submit">
+
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+
+                        Recommend Meals
+
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!--================ FOOTER ================-->
+
+    <footer>
+
+        <p>
+
+            © 2026 Nutrition Recommendation System |
+            Flask • Python • Machine Learning • K-Means Clustering
+
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

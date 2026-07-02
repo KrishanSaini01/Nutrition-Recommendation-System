@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About | Nutrition Recommendation System</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav>
+
+        <div class="nav-container">
+
+            <a href="/" class="logo">
+
+                Nutri<span>AI</span>
+
+            </a>
+
+            <div class="nav-links">
+
+                <a href="/">Home</a>
+
+                <a href="/about">About</a>
+
+                <a href="/project">Project</a>
+
+                <a href="/contact">Contact</a>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero">
+
+        <div class="hero-text">
+
+            <h1>
+
+                About <span>Nutrition Recommendation System</span>
+
+            </h1>
+
+            <p>
+
+                This project is a Machine Learning based web application that
+                recommends healthy meals according to the nutritional values
+                entered by the user. It uses the K-Means Clustering algorithm
+                to group similar meals and provides personalized food
+                recommendations instantly.
+
+            </p>
+
+        </div>
+
+        <div class="hero-image">
+
+            <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=800"
+                alt="Healthy Food">
+
+        </div>
+
+    </section>
+
+    <!-- ================= PROJECT OVERVIEW ================= -->
+
+    <section class="features">
+
+        <h2 class="section-title">
+
+            Project <span>Overview</span>
+
+        </h2>
+
+        <div class="feature-grid">
+
+            <div class="feature-card">
+
+                <i class="fas fa-database"></i>
+
+                <h3>Dataset</h3>
+
+                <p>
+
+                    More than 2000 meals with calories, protein,
+                    carbohydrates, fat, fiber, sugar, sodium,
+                    cholesterol and serving size.
+
+                </p>
+
+            </div>
+
+            <div class="feature-card">
+
+                <i class="fas fa-broom"></i>
+
+                <h3>Data Preprocessing</h3>
+
+                <p>
+
+                    Missing value handling, duplicate removal,
+                    feature selection and feature scaling
+                    using StandardScaler.
+
+                </p>
+
+            </div>
+
+            <div class="feature-card">
+
+                <i class="fas fa-brain"></i>
+
+                <h3>K-Means Clustering</h3>
+
+                <p>
+
+                    Similar meals are grouped into clusters.
+                    User input is matched with the nearest
+                    cluster to generate recommendations.
+
+                </p>
+
+            </div>
+
+            <div class="feature-card">
+
+                <i class="fas fa-utensils"></i>
+
+                <h3>Recommendation Engine</h3>
+
+                <p>
+
+                    Top similar meals are recommended based
+                    on Euclidean Distance inside the predicted cluster.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= WORKFLOW ================= -->
+
+    <section class="features">
+
+        <h2 class="section-title">
+
+            Machine Learning <span>Workflow</span>
+
+        </h2>
+
+        <div class="feature-grid">
+
+            <div class="feature-card">
+
+                <i class="fas fa-file-import"></i>
+
+                <h3>Load Dataset</h3>
+
+                <p>Healthy Eating Dataset is loaded.</p>
+
+            </div>
+
+            <div class="feature-card">
+
+                <i class="fas fa-filter"></i>
+
+                <h3>Preprocessing</h3>
+
+                <p>Clean and normalize the nutritional features.</p>
+
+            </div>
+
+            <div class="feature-card">
+
+                <i class="fas fa-chart-line"></i>
+
+                <h3>Train K-Means</h3>
+
+                <p>Meals are divided into meaningful clusters.</p>
+
+            </div>
+
+            <div class="feature-card">
+
+                <i class="fas fa-save"></i>
+
+                <h3>Save Model</h3>
+
+                <p>KMeans model and StandardScaler are saved using Joblib.</p>
+
+            </div>
+
+            <div class="feature-card">
+
+                <i class="fas fa-user"></i>
+
+                <h3>User Input</h3>
+
+                <p>User enters nutritional requirements through the web form.</p>
+
+            </div>
+
+            <div class="feature-card">
+
+                <i class="fas fa-check-circle"></i>
+
+                <h3>Meal Recommendation</h3>
+
+                <p>Top matching healthy meals are displayed.</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= TECHNOLOGIES ================= -->
+
+    <section class="features">
+
+        <h2 class="section-title">
+
+            Technologies <span>Used</span>
+
+        </h2>
+
+        <div class="feature-grid">
+
+            <div class="feature-card">
+
+                <i class="fab fa-python"></i>
+
+                <h3>Python</h3>
+
+            </div>
+
+            <div class="feature-card">
+
+                <i class="fas fa-robot"></i>
+
+                <h3>Scikit-Learn</h3>
+
+            </div>
+
+            <div class="feature-card">
+
+                <i class="fas fa-fire"></i>
+
+                <h3>Flask</h3>
+
+            </div>
+
+            <div class="feature-card">
+
+                <i class="fab fa-html5"></i>
+
+                <h3>HTML5</h3>
+
+            </div>
+
+            <div class="feature-card">
+
+                <i class="fab fa-css3-alt"></i>
+
+                <h3>CSS3</h3>
+
+            </div>
+
+            <div class="feature-card">
+
+                <i class="fas fa-database"></i>
+
+                <h3>Pandas & NumPy</h3>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= CTA ================= -->
+
+    <section class="features">
+
+        <div class="glass" style="padding:60px;text-align:center;">
+
+            <h2 style="font-size:40px;margin-bottom:20px;">
+
+                Try the Nutrition Recommendation System
+
+            </h2>
+
+            <p style="margin-bottom:30px;color:#d1d5db;">
+
+                Enter your nutritional requirements and discover
+                the best meals for your health goals.
+
+            </p>
+
+            <a href="/project" class="btn">
+
+                Start Recommendation
+
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>
+
+            © 2026 Nutrition Recommendation System |
+            Built with Flask, Python & Machine Learning
+
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

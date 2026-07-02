@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Recommended Meals</title>
+
+    <link rel="stylesheet"
+        href="{{ url_for('static', filename='css/style.css') }}">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav>
+
+        <div class="nav-container">
+
+            <a href="/" class="logo">
+
+                Nutri<span>AI</span>
+
+            </a>
+
+            <div class="nav-links">
+
+                <a href="/">Home</a>
+
+                <a href="/about">About</a>
+
+                <a href="/project">Project</a>
+
+                <a href="/contact">Contact</a>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!-- ================= RESULT SECTION ================= -->
+
+    <section class="results">
+
+        <h2 class="section-title">
+
+            🍽 Recommended <span>Meals</span>
+
+        </h2>
+
+        <div class="result-grid">
+
+        {% if meals %}
+
+            {% for meal in meals %}
+
+            <div class="food-card">
+
+
+                <div class="food-content">
+
+                    <h3>
+
+                        {{ meal.meal_name }}
+
+                    </h3>
+
+                    <p>
+
+                        🌍 <strong>Cuisine :</strong>
+
+                        {{ meal.cuisine }}
+
+                    </p>
+
+                    <p>
+
+                        🍽 <strong>Meal Type :</strong>
+
+                        {{ meal.meal_type }}
+
+                    </p>
+
+                    <p>
+
+                        🥗 <strong>Diet :</strong>
+
+                        {{ meal.diet_type }}
+
+                    </p>
+
+                    <hr>
+
+                    <p>
+
+                        🔥 Calories :
+
+                        {{ meal.calories }} kcal
+
+                    </p>
+
+                    <p>
+
+                        💪 Protein :
+
+                        {{ meal.protein_g }} g
+
+                    </p>
+
+                    <p>
+
+                        🍚 Carbs :
+
+                        {{ meal.carbs_g }} g
+
+                    </p>
+
+                    <p>
+
+                        🥑 Fat :
+
+                        {{ meal.fat_g }} g
+
+                    </p>
+
+                    <p>
+
+                        🌾 Fiber :
+
+                        {{ meal.fiber_g }} g
+
+                    </p>
+
+                    <p>
+
+                        🍬 Sugar :
+
+                        {{ meal.sugar_g }} g
+
+                    </p>
+
+                    <p>
+
+                        🧂 Sodium :
+
+                        {{ meal.sodium_mg }} mg
+
+                    </p>
+
+                    <p>
+
+                        ❤️ Cholesterol :
+
+                        {{ meal.cholesterol_mg }} mg
+
+                    </p>
+
+                    <p>
+
+                        🍛 Serving :
+
+                        {{ meal.serving_size_g }} g
+
+                    </p>
+
+                    <div class="rating">
+
+                        ⭐ Rating :
+
+                        {{ meal.rating }}
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            {% endfor %}
+        {% else %}
+
+        <div class="glass" style="padding:40px;text-align:center;">
+
+            <h2>No Matching Meals Found 😔</h2>
+
+            <p>
+
+                Try changing your nutrition values or filters.
+
+            </p>
+
+            <br>
+
+            <a href="/project" class="btn">
+
+                Try Again
+
+            </a>
+
+        </div>
+
+        {% endif %}
+        </div>
+
+        <div style="text-align:center;margin-top:60px;">
+
+            <a href="/project" class="btn">
+
+                <i class="fa-solid fa-arrow-left"></i>
+
+                Try Another Recommendation
+
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>
+
+            © 2026 Nutrition Recommendation System
+
+            | Flask • Python • Machine Learning • K-Means Clustering
+
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

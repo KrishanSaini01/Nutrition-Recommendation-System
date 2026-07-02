@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nutrition Recommendation System</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav>
+
+        <div class="nav-container">
+
+            <a href="/" class="logo">
+
+                Nutri<span>AI</span>
+
+            </a>
+
+            <div class="nav-links">
+
+                <a href="/">Home</a>
+
+                <a href="/about">About</a>
+
+                <a href="/project">Project</a>
+
+                <a href="/contact">Contact</a>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero">
+
+        <div class="hero-text">
+
+            <h1>
+
+                Smart <span>Nutrition Recommendation</span>
+
+                Using Machine Learning
+
+            </h1>
+
+            <p>
+
+                Discover healthy meals based on your nutritional needs.
+                Our K-Means Clustering model analyzes your calorie, protein,
+                carbs, fat and other nutritional preferences to recommend
+                the most suitable meals from our food database.
+
+            </p>
+
+            <a href="/project" class="btn">
+
+                Get Started
+
+            </a>
+
+        </div>
+
+        <div class="hero-image">
+
+            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=800"
+                alt="Healthy Food">
+
+        </div>
+
+    </section>
+
+    <!-- ================= FEATURES ================= -->
+
+    <section class="features">
+
+        <h2 class="section-title">
+
+            Why Choose <span>NutriAI?</span>
+
+        </h2>
+
+        <div class="feature-grid">
+
+            <div class="feature-card">
+
+                <i class="fas fa-heartbeat"></i>
+
+                <h3>Healthy Diet</h3>
+
+                <p>
+
+                    Personalized food recommendations based on your
+                    nutritional requirements.
+
+                </p>
+
+            </div>
+
+            <div class="feature-card">
+
+                <i class="fas fa-brain"></i>
+
+                <h3>Machine Learning</h3>
+
+                <p>
+
+                    Powered by K-Means Clustering to find meals
+                    similar to your nutritional goals.
+
+                </p>
+
+            </div>
+
+            <div class="feature-card">
+
+                <i class="fas fa-bolt"></i>
+
+                <h3>Instant Results</h3>
+
+                <p>
+
+                    Get top meal recommendations within seconds.
+
+                </p>
+
+            </div>
+
+            <div class="feature-card">
+
+                <i class="fas fa-utensils"></i>
+
+                <h3>2000+ Meals</h3>
+
+                <p>
+
+                    Explore a large collection of meals from
+                    different cuisines and diet types.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= HOW IT WORKS ================= -->
+
+    <section class="features">
+
+        <h2 class="section-title">
+
+            How It <span>Works</span>
+
+        </h2>
+
+        <div class="feature-grid">
+
+            <div class="feature-card">
+
+                <i class="fas fa-keyboard"></i>
+
+                <h3>Enter Nutrition Details</h3>
+
+                <p>
+
+                    Fill calories, protein, carbs, fat, fiber,
+                    sugar, sodium, cholesterol and serving size.
+
+                </p>
+
+            </div>
+
+            <div class="feature-card">
+
+                <i class="fas fa-gears"></i>
+
+                <h3>AI Prediction</h3>
+
+                <p>
+
+                    The trained K-Means model predicts the
+                    closest nutrition cluster.
+
+                </p>
+
+            </div>
+
+            <div class="feature-card">
+
+                <i class="fas fa-bowl-food"></i>
+
+                <h3>Meal Recommendation</h3>
+
+                <p>
+
+                    Get the top matching meals with nutrition,
+                    cuisine and ratings.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= CTA ================= -->
+
+    <section class="features">
+
+        <div class="glass" style="padding:60px;text-align:center;">
+
+            <h2 style="font-size:40px; margin-bottom:20px;">
+
+                Ready to Find Your Perfect Meal?
+
+            </h2>
+
+            <p style="margin-bottom:30px;color:#d1d5db;">
+
+                Start your personalized nutrition journey today.
+
+            </p>
+
+            <a href="/project" class="btn">
+
+                Start Recommendation
+
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>
+
+            © 2026 Nutrition Recommendation System |
+
+            Developed using Flask, Python & Machine Learning
+
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
